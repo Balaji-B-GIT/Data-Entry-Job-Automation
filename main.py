@@ -59,6 +59,7 @@ class DataEntry:
             price_input.send_keys(price)
             link_input.send_keys(link)
             time.sleep(2)
+            # Here i used XPATH in different way to get jsname.
             submit = self.driver.find_element(By.XPATH, '//*[@jsname="M2UYVd"]')
             submit.click()
             time.sleep(2)
